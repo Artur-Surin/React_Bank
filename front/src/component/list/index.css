@@ -1,0 +1,115 @@
+.item  {
+    display: grid;
+    grid-template-columns: 40px auto;
+    gap: 12px;
+    align-items: center;
+    padding: 16px;
+   
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    background-color: #FFFFFF;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item__content {
+    display: flex;
+	justify-content: space-between;	
+	align-items: center;
+}
+
+.item__title-block {
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    align-items: center;
+}
+
+.item__icon {
+    width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: rgb(255, 255, 254);
+	border: 1px solid rgba(145, 144, 142, 0.2);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.item__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    font-family: "Jost", sans-serif;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.details {
+    font-size: 12px;
+    color: #939199;
+    padding-top: 8px;
+    font-family: "Jost", sans-serif;
+}
+
+.notificationInfo {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Jost", sans-serif;
+
+    padding: 5px 0;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item__info {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+}
+
+.stripe {
+    background-image: url("../../../public/svg/striper.svg");
+}
+
+.coinbase {
+    background-image: url("../../../public/svg/coinbase.svg");
+}
+
+.profile {
+    background-image: url("../../../public/svg/profile.svg");
+}
+
+.notification {
+    background-image: url("../../../public/svg/profile.svg");
+}
+
+.notification + .item__content .details::after {
+    content: " ago / Announcement";
+}
+
+.warn {
+    background-image: url("../../../public/svg/warn.svg"); ;
+}
+
+.warn + .item__content .details::after {
+    content: " ago / Warning";
+}
+
+.stripe + .item__content .details::after , 
+.coinbase + .item__content .details::after {
+	content: " / Received";
+}
+
+.profile  + .item__content .details::after{
+    content: " / Sent";
+}
+
+.profile + .item__content .item__info {
+    color: #1D1D1F;
+}

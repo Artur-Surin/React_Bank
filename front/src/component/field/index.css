@@ -1,0 +1,58 @@
+.field {
+    display: grid;
+    gap: 8px;
+}
+.field__label {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Jost", sans-serif;
+    color: #1D1D1F;
+}
+
+.field__input {
+    padding: 20px 16px;
+    color: #1D1D1F;
+    font-size: 14px;
+    border-radius: 12px;
+    border: 1px solid #E9E8EB;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.field__input:focus {
+    border-color: #775CE5;
+}
+
+.on, .off {
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 20px + 10px);
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.off {
+    background-image: url("../../../public/svg/close-eye.svg");
+}
+
+.on {
+    background-image: url("../../../public/svg/open-eye.svg");
+}
+
+.field__input-wrapper {
+    position: relative;
+}
+
+.field__input--error {
+    border-color: #F23152;
+}
+
+.alert {
+    font-size: 14px;
+    font-weight: 400;
+    color: #F23152;
+}

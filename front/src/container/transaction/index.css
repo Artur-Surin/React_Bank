@@ -1,0 +1,34 @@
+.amount {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+}
+
+.amount--receive {
+    color: #24B277;
+}
+
+.amount--send {
+    color: #ea4614;
+}
+
+.card {
+    padding: 16px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    margin: 16px;
+}
+
+.card__line {
+    display: flex;
+    justify-content: space-between;
+}
+

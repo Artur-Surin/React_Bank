@@ -1,0 +1,19 @@
+.receive__heading {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.receive__payment {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.receive__subtitle {
+    font-size: 16px;
+    color: #000000;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+}

@@ -1,0 +1,5 @@
+.arrow-back__image:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: transform 0.3s;
+}

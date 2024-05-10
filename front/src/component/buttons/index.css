@@ -1,0 +1,41 @@
+.button {
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.button:hover {
+    transition: opacity 0.3s;
+    opacity: 0.7;
+}
+
+.button:focus {
+    transition: opacity 0.3s;
+    opacity: 0.7;
+}
+
+.button:active {
+    transition: opacity 0.3s;
+    opacity: 0.5;
+}
+
+.button--primary {
+    background-color: #775CE5;
+    color: #FFFFFF;
+    font-family: "Jost", sans-serif;
+}
+
+.button--secondary {
+    color: #775CE5;
+    border: 1px solid #775CE5;
+    font-family: "Jost", sans-serif;
+}
+
+.button--alert {
+    color: #F23152;
+    border-color: #F23152;
+}

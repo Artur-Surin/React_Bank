@@ -1,0 +1,107 @@
+.balance-page {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+}
+
+.balance__heading {
+    background-image: url("/public/img/balance-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px 66px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    position: relative;
+}
+
+.balance__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balance__amount {
+    text-align: center;
+
+    color: #FFFFFF;
+    font-size: 34px;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+}
+
+.balance__amount-cent {
+    font-weight: 400;
+}
+
+.balance__actions  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+
+    position: absolute;
+    bottom: calc(100% - (100% + (97.2px + 12px) / 2));
+    left: calc(50% - 40px - 71.2px / 2);
+}
+
+
+
+.icon-button {
+    border: 10px solid #F5F5F7;
+    border-radius: 100px;
+    padding: 12px;
+    grid-row: 1;
+    background: #5B94E9;
+}
+
+.icon {
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.icon-button:hover {
+    background: linear-gradient(to right, #5B94E9, #87CEEB);
+}
+
+.icon-button--actions {
+    height: 28px;
+    width: 28px;
+}
+
+.icon-button__text {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Jost", sans-serif;
+
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+
+    grid-row: 2;
+}
+
+.transaction__list {
+	max-height: 550px;
+	overflow-y: auto;
+
+	border-radius: 12px;
+	outline: 1px solid rgba(104, 81, 194, 0.02);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 0 20px 0;
+
+	border-bottom: 8px solid rgba(104, 81, 194, 0.05);
+}
+
+.transaction__list::-webkit-scrollbar {
+	display: none;
+}

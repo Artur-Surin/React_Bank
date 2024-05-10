@@ -1,0 +1,63 @@
+.welcome {
+   display: flex;
+   flex-direction: column;
+   gap: 100px;
+
+   justify-content: space-between;
+   height: 100vh;
+   
+}
+
+.welcome__background {
+    background: url("../../../public/img/background.png");
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    border-radius: 0 0 32px 32px;
+
+    padding: 107px 0 0 0;
+}
+
+.welcome__image-container {
+    position: relative;
+    height: 250px;
+    
+    display: flex;
+    justify-content: right;
+}
+
+.welcome__image {
+    position: absolute;
+    left: -40%;
+    top: -70%;
+    height:  750px;
+    z-index: 2;
+}
+
+.welcome__info {
+    display: grid;
+    gap: 16px;
+}
+
+.welcome__title {
+    font-family: "Jost", sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.welcome__text {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.welcome__buttons {
+    padding: 0 20px 45px;
+
+    display: grid;
+    gap: 12px;
+    z-index: 3;
+}
