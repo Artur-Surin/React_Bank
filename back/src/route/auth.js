@@ -11,10 +11,10 @@ const { Confirm } = require("../class/confirm")
 const { Notification } = require("../class/notification")
 
 User.create({
-	email: 'neo@mail.com',
-	password: 'neoneoNEO5',
+	email: 'Artur.surin@gmail.com',
+	password: 'Artur12345',
 });
-	User.userConfirm('neo@mail.com');
+	User.userConfirm('Artur.surin@gmail.com');
 
 
 //===================================================
